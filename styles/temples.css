@@ -1,99 +1,94 @@
-* { 
-    
-    margin: 0;
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
-    font-family: "Sour Gummy", sans-serif;
-    margin: 0;
-    
+	font-family: "Sour Gummy", sans-serif;
+	background-color: #ffffff;
+	color: #000000;
 }
-header p {
-    font-family: "Coiny", cursive;
-    font-size: 2rem;
-    color: rgb(218, 23, 175);
-	position: relative;
-}
+
 header {
-    font-family: "Coiny", cursive;
-    background-color: #dca0eb;
-	display: grid;
-	grid-gap: 1rem;
+	font-family: "Coiny", cursive;
+	background-color: #dca0eb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding: 20px;
 	border: 1px solid rgba(109, 30, 30, 0.1);
 	box-shadow: 0 0 30px #e90752;
-  
 }
+
 header,
 main {
-    max-width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
-h1 {
+header p {
+	font-family: "Coiny", cursive;
 	font-size: 2rem;
+	color: #5a0040;
+	position: relative;
 }
+
+h1 {
+	font-family: "Sour Gummy", sans-serif;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+	color: #4a0033;
+}
+
+h2 {
+	font-size: 2rem;
+	color: #7a004f;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: #7a004f;
+}
+
 nav {
-	background-color: #d87db5;
+	background-color: #a53d7c;
 }
+
 nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 }
+
 nav a {
 	display: block;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
 	font-size: larger;
 }
+
 nav a:hover {
 	text-decoration: underline double;
-	background-color: #eee;
-	color: #d188e7f5;
+	background-color: #eeeeee;
+	color: #4a0033;
 }
 
 .active {
-	color: rgb(219, 9, 9);
+	color: #7a0000;
 }
-
-
-@media (min-width: 740px) {
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
-}
-
-.coiny-regular {
-  font-family: "Coiny", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  
-}
-
-
 
 main {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
 }
 
 .stdlf {
@@ -102,211 +97,121 @@ main {
 	margin-bottom: 1rem;
 }
 
-body {
-	 font-family: "Sour Gummy", sans-serif;
-}
-h1 {
-    font-family: "Sour Gummy", sans-serif;
-	font-size: 1.5rem;
-	padding: 1rem;
-	text-align: center;
-	color: #fff;
-}
-h2 {
-	font-size: 2rem;
-    color: rgb(230, 8, 130);
-}
-h3 {
-	font-size: 1.5rem;
-	color: rgb(230, 8, 130);
-}
 section {
 	margin: 2rem auto;
 	max-width: 960px;
 	padding: 0.5rem;
 }
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 25px;
+	gap: 25px;
 	place-items: center;
 }
 
-
-img {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-figcaption {
-	font-size: smaller;
-     text-align: center;
-}
-/* hover effect */
-.hover:hover {
-	box-shadow: 0 0 50px #333;
-}
-/* rounded corners - boxmodel */
-.rocorn {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.rocorn:hover {
-	box-shadow: 0 0 50px #333;
-}
-.opac {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.opac:hover {
-	box-shadow: 0 0 50px #333;
-}
-.blur {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.blur:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.gray {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.gray:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.object {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.object:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.contrast {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.contrast:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.saturate {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.saturate:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.shape-outside {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.shape-outside:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.mbm-difference {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.mbm-difference:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.mbm-hard-light {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.mbm-hard-light:hover {
-	box-shadow: 0 0 50px #333;
-}
-
-.transform {
-	width: 95%;
-	height: auto;
-	margin: 0.5rem;
-    display: block;
-}
-.transform:hover {
-	box-shadow: 0 0 50px #333;
-}
-
+img,
+.rocorn,
+.opac,
+.blur,
+.gray,
+.object,
+.contrast,
+.saturate,
+.shape-outside,
+.mbm-difference,
+.mbm-hard-light,
+.transform,
 .turn {
 	width: 95%;
 	height: auto;
 	margin: 0.5rem;
-    display: block;
+	display: block;
 }
+
+.hover:hover,
+.rocorn:hover,
+.opac:hover,
+.blur:hover,
+.gray:hover,
+.object:hover,
+.contrast:hover,
+.saturate:hover,
+.shape-outside:hover,
+.mbm-difference:hover,
+.mbm-hard-light:hover,
+.transform:hover,
 .turn:hover {
-	box-shadow: 0 0 50px #333;
+	box-shadow: 0 0 50px #333333;
+}
+
+figcaption {
+	font-size: smaller;
+	text-align: center;
+	color: #000000;
+}
+
+footer {
+	width: 100%;
+	background-color: #8b3b6e;
+	color: #ffffff;
+	text-align: center;
+	padding: 1rem;
 }
 
 footer p {
-  font-family: "Coiny", cursive;
-  font-size: 1.0rem;
-  color:white
+	font-family: "Coiny", cursive;
+	font-size: 1rem;
+	color: #ffffff;
 }
-footer {
-	
-width: 100%;
-    background-color: rgb(201, 123, 179);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-	
-	
-    }
+
+
 #menu {
-    background: none;
-    border: none;
+	background: none;
+	border: none;
+	margin-left: auto;
+	cursor: pointer;
 }
 
 #menu::before {
-    content: "☰";
-    font-size: 2rem;
-    color: white;
+	content: "☰";
+	font-size: 2rem;
+	color: #ffffff;
 }
 
 #menu.open::before {
-  content: "✖";
+	content: "✖";
+}
+
+@media (min-width: 740px) {
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+
+	nav a {
+		flex: 1 1 100%;
+	}
 }
 
 @media (max-width: 768px) {
 
-  #menu {
-    display: block;
-  }
+	#menu {
+		display: block;
+	}
 
-  .navigation a {
-    display: none;
-  }
+	.navigation a {
+		display: none;
+	}
 
-  .navigation.open a {
-    display: block;
-  }
+	.navigation.open a {
+		display: block;
+	}
 }

@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Main layout */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Card sections */
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

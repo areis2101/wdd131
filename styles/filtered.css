@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}

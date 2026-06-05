@@ -23,6 +23,15 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: yellow;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,4 +54,14 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }

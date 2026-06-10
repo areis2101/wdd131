@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 
 body {
     font-family: Arial, sans-serif;
@@ -69,4 +69,22 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sour-gummy-regular {
+  font-family: "Sour Gummy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-tightuniquifier{
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

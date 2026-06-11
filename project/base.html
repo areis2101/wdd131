@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,67 +12,100 @@
 
     <meta name="author" content="Alice Reis">
 
-   <link rel="stylesheet" href="../styles/styles/base.css">
+    <link rel="stylesheet" href="../styles/styles/base.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <script src="../scripts/getdate.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="../scripts/getdate.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <span id="course-title">
-            WDD 131 – Dynamic Web Fundamentals
-        </span>
+<header>
 
-        <nav>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
-    </header>
+    <span id="course-title">
+        WDD 131: Dynamic Web Fundamentals
+    </span>
 
-    <main>
+    <nav>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
 
-        <h1>Alice Reis</h1>
+</header>
 
-        <section class="card">
-            <h2>About Me</h2>
+<main>
 
-           <img src="../images/profile.jpg" alt="Alice Reis">
+    <h1>Alice Reis</h1>
+
+    <section class="card about-card">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <div>
+                <p>
+                    My name is Alice Reis. I am an Information Technology student
+                    who enjoys web development, programming, and technology.
+                    My goal is to become a software developer and continue
+                    learning new skills every day.
+                </p>
+            </div>
+
+            <img src="../images/profile.jpg" alt="Alice Reis">
+
+        </div>
+
+        <h3>Espírito Santo, Brazil</h3>
+
+        <div class="country-content">
+
+            <img src="../images/bandeiradobrasil.jpg" alt="Brazil Flag">
 
             <p>
-                My name is Alice Reis. I am a student of Information Technology and
-                enjoy learning web development, programming, and technology.
+                Brazil is the largest country in South America and is known for
+                its culture, biodiversity, natural beauty, and friendly people.
+                It is home to the Amazon Rainforest and many world-famous
+                landmarks and beaches.
             </p>
-        </section>
 
-        <section class="card">
-            <h2>Brazil</h2>
+        </div>
 
-            <img src="../images/bandeiradobrasil.jpg" alt="Brazil">
+    </section>
 
-            <p>
-                Brazil is the largest country in South America and is known
-                for its culture, natural beauty, and biodiversity.
-            </p>
-        </section>
+    <section class="card resources-card">
 
-    </main>
+        <h2>Web Dev Resources</h2>
 
-    <footer>
+        <ul>
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
 
-        <p>
-            &copy;
-            <span id="currentyear"></span>
-            Alice Reis | Brazil
-        </p>
+    </section>
 
-        <p id="lastModified"></p>
+</main>
 
-    </footer>
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span>
+        Alice Reis | Brazil
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
 
 </body>
 </html>
+```

@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #009c3b;
+    --secondary-color: #ffdf00;
+    --text-color: #000;
+    --background-color: rgba(255, 255, 255, 0.8);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,124 +12,74 @@
 }
 
 body {
-    font-family: "Sour Gummy", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    font-family: Arial, sans-serif;
 }
-
-/* HEADER */
 
 header {
-    background-color: #dca0eb;
-    padding: 1rem;
-    box-shadow: 0 0 20px #e90752;
-}
-
-header h1 {
-    text-align: center;
-    color: #4a0033;
-    margin-bottom: 1rem;
-}
-
-/* NAVIGATION */
-
-nav {
-    background-color: #a53d7c;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-nav a {
-    display: block;
+    background-color: var(--primary-color);
     color: white;
-    text-decoration: none;
     text-align: center;
     padding: 1rem;
-    font-size: 1.1rem;
 }
-
-nav a:hover {
-    background-color: #eeeeee;
-    color: #4a0033;
-}
-
-/* MAIN */
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+    position: relative;
 }
 
-main h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #7a004f;
-}
-
-/* GALLERY GRID */
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-}
-
-/* TEMPLE CARDS */
-
-.gallery section {
-    background-color: rgba(170, 162, 162, 0.829);
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-}
-
-.gallery h3 {
-    color: #7a004f;
-    margin-bottom: 0.5rem;
-}
-
-.gallery p {
-    margin: 0.4rem 0;
-}
-
-.gallery img {
+.hero-image img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 0.75rem;
+    display: block;
 }
 
-/* FOOTER */
+.data,
+.weather {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
 
 footer {
-    background-color: #8b3b6e;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
-footer p {
-    margin: 0.3rem 0;
-}
+/* Desktop */
+@media screen and (min-width: 768px) {
 
-/* DESKTOP */
-
-@media (min-width: 768px) {
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
+    .data,
+    .weather {
+        position: absolute;
+        width: 300px;
     }
 
-    nav li {
-        flex: 1;
+    .data {
+        top: 50px;
+        left: 30px;
+    }
+
+    .weather {
+        bottom: 50px;
+        right: 30px;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .data,
+    .weather {
+        margin: 1rem;
+    }
+
+    .weather-icon {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
     }
 }

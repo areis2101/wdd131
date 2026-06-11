@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Information about Brazil, including data and weather conditions.">
-    <meta name="author" content="Alice Reis">
-    <title>Brazil</title>
+    <meta name="description" content="Information about Brazil including geographic data and weather conditions.">
+    <meta name="author" content="Alice Ribeiro dos Reis">
+
+    <title>Brazil | Place Project</title>
 
     <link rel="stylesheet" href="../styles/styles/places.css">
     <script defer src="../scripts/place.js"></script>
@@ -18,38 +19,43 @@
         <h1>Brazil</h1>
     </header>
 
-    <main class="hero">
+    <main>
+
+        <picture class="hero-image">
+            <source srcset="../images/brazil-large.webp" media="(min-width: 1000px)">
+            <source srcset="../images/brazil-medium.webp" media="(min-width: 600px)">
+            <img src="../images/brazil1.jpg" alt="Landscape of Brazil">
+        </picture>
 
         <section class="data">
             <h2>Data</h2>
 
-            <p>Area: 8,510,417 km²</p>
-            <p>Population: 214.3 million</p>
-            <p>Capital: Brasília</p>
-            <p>Language: Portuguese</p>
-            <p>Currency: Brazilian Real (BRL)</p>
-            <p>Time Zone: America/Sao_Paulo</p>
-            <p>Calling Code: +55</p>
-            <p>Internet TLD: .br</p>
+            <p><strong>Area:</strong> 8,510,417 km²</p>
+            <p><strong>Population:</strong> 214.3 million</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Language:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+            <p><strong>Time Zone:</strong> America/Sao_Paulo</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
         </section>
 
         <section class="weather">
-            <h2>Weather</h2>
+            <h2>Weather ⛅</h2>
 
-            <p>Temperature: 25°C</p>
-            <p>Conditions: Sunny</p>
-            <p>Wind: 22 km/h</p>
-            <p>Humidity: 60%</p>
+            <p><strong>Temperature:</strong> 25°C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 22 km/h</p>
+           <p>Wind Chill: <span id="windchill"></span></p>
         </section>
 
     </main>
-  <footer  
-    
-        © <span id="currentyear"></span> 2026 Alice Ribeiro dos Reis - Brazil
 
-
-    <p id="lastModified"></p>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Alice Ribeiro dos Reis - Brazil</p>
+        <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>

@@ -1,48 +1,86 @@
+:root {
+    --green: #009c3b;
+    --yellow: #ffdf00;
+    --blue: #002776;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 header {
-    background-color: #009c3b;
+    background-color: var(--green);
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-.hero {
-    background-image: url("../../images/brazil1.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
-    padding: 2rem;
+.hero-image img {
+    width: 100%;
+    display: block;
 }
+
 .data,
 .weather {
-    background-color: rgba(255, 255, 255, 0.75);
-    padding: 1.5rem;
-    width: 280px;
-
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-}
-
-.weather {
-    justify-self: end;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 8px;
 }
 
 .data h2,
 .weather h2 {
-    background-color: none
-    color: white;
-    padding: 0.5rem;
-    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
- 
+
+.weather-icon {
+    display: block;
+    width: 60px;
+    margin: 0 auto 1rem;
+}
+
 footer {
-    background-color: #009c3b;
+    background-color: var(--green);
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 250px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 250px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
 }

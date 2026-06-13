@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,47 +14,48 @@
 
 <body>
 
-    <header>
-        <h1>Brazil</h1>
-    </header>
+<header>
+    <h1>Brazil</h1>
+</header>
 
-    <main>
+<main>
 
-        <picture class="hero-image">
-            <source srcset="../images/brazil-large.webp" media="(min-width: 1000px)">
-            <source srcset="../images/brazil-medium.webp" media="(min-width: 600px)">
-            <img src="../images/brazil1.jpg" alt="Landscape of Brazil">
-        </picture>
+    <picture class="hero-image">
+        <source srcset="../images/brazil1small.webp" media="(max-width: 500px)">
+        <source srcset="../images/brazil1medium.webp" media="(max-width: 1000px)">
+        <img src="../images/brazil1.jpg" alt="Landscape of Brazil">
+    </picture>
 
-        <section class="data">
-            <h2>Data</h2>
+    <section class="data">
+        <h2>Data</h2>
 
-            <p><strong>Area:</strong> 8,510,417 km²</p>
-            <p><strong>Population:</strong> 214.3 million</p>
-            <p><strong>Capital:</strong> Brasília</p>
-            <p><strong>Language:</strong> Portuguese</p>
-            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
-            <p><strong>Time Zone:</strong> America/Sao_Paulo</p>
-            <p><strong>Calling Code:</strong> +55</p>
-            <p><strong>Internet TLD:</strong> .br</p>
-        </section>
+        <p><strong>Area:</strong> 8,510,417 km²</p>
+        <p><strong>Population:</strong> 214.3 million</p>
+        <p><strong>Capital:</strong> Brasília</p>
+        <p><strong>Language:</strong> Portuguese</p>
+        <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+        <p><strong>Time Zone:</strong> America/Sao_Paulo</p>
+        <p><strong>Calling Code:</strong> +55</p>
+        <p><strong>Internet TLD:</strong> .br</p>
+    </section>
 
-        <section class="weather">
-            <h2>Weather ⛅</h2>
+    <section class="weather">
+        <h2>Weather</h2>
 
-            <p><strong>Temperature:</strong> 25°C</p>
-            <p><strong>Conditions:</strong> Sunny</p>
-            <p><strong>Wind:</strong> 22 km/h</p>
-           <p>Wind Chill: <span id="windchill"></span></p>
-        </section>
+        <img class="weather-icon" src="../images/weather.svg" alt="Weather Icon">
 
-    </main>
+        <p><strong>Temperature:</strong> 25°C</p>
+        <p><strong>Conditions:</strong> Sunny</p>
+        <p><strong>Wind:</strong> 22 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Alice Ribeiro dos Reis - Brazil</p>
-        <p id="lastModified"></p>
-    </footer>
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Alice Ribeiro dos Reis - Brazil</p>
+    <p id="lastModified"></p>
+</footer>
 
 </body>
-
 </html>

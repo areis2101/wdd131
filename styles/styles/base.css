@@ -1,3 +1,9 @@
+:root {
+    --green: #009c3b;
+    --yellow: #ffdf00;
+    --blue: #002776;
+    --white: #ffffff;
+}
 
 * {
     margin: 0;
@@ -6,143 +12,114 @@
 }
 
 body {
-    font-family: "Inter Tight", sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #1f4d78;
-}
-
-#course-title {
-    display: block;
-    text-align: center;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 1rem;
-
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-}
-
-h1 {
-    grid-column: 1 / 3;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.card h2 {
-    background-color: #1f4d78;
+    background-color: var(--green);
     color: white;
     text-align: center;
     padding: 1rem;
+    border-bottom: 8px solid var(--yellow);
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+header h1 {
+    font-size: 2rem;
 }
 
-.about-content img {
-    width: 180px;
+.hero-image img {
+    width: 100%;
     height: auto;
+    display: block;
 }
 
-.about-content p {
-    line-height: 1.8;
-}
-
-h3 {
-    text-align: center;
-    margin: 1rem 0;
-}
-
-.country-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.data,
+.weather {
+    background-color: white;
+    margin: 1rem;
     padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-.country-content img {
-    width: 140px;
-    border: 1px solid #ccc;
+.data h2,
+.weather h2 {
+    background-color: var(--green);
+    color: white;
+    padding: .75rem;
+    margin: -1rem -1rem 1rem -1rem;
+    text-align: center;
 }
 
-.country-content p {
-    line-height: 1.8;
+.data p,
+.weather p {
+    margin-bottom: .5rem;
 }
 
-.resources-card ul {
-    padding: 2rem;
-}
-
-.resources-card li {
-    margin-bottom: 1rem;
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 footer {
-    background-color: #1f4d78;
+    background-color: var(--green);
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
 }
 
-#lastModified {
-    color: yellow;
-    margin-top: 0.5rem;
+footer p {
+    margin: .25rem 0;
 }
 
-@media (max-width: 768px) {
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 768px) {
+
     main {
-        grid-template-columns: 1fr;
+        position: relative;
     }
 
-    h1 {
-        grid-column: auto;
+    .hero-image img {
+        width: 100%;
+        min-height: 700px;
+        object-fit: cover;
     }
 
-    .about-content,
-    .country-content {
-        flex-direction: column;
+    .data,
+    .weather {
+        position: absolute;
+        width: 320px;
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 0;
     }
 
-    nav {
-        flex-direction: column;
+    .data {
+        top: 40px;
+        left: 40px;
+    }
+
+    .weather {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    .data h2,
+    .weather h2 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.3rem;
     }
 }

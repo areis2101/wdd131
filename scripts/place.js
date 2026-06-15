@@ -4,8 +4,7 @@ const windChill = document.querySelector("#windchill");
 
 currentYear.textContent = new Date().getFullYear();
 
-lastModified.textContent =
-    `Last Modified: ${document.lastModified}`;
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 const temperature = 25;
 const windSpeed = 22;

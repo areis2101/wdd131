@@ -1,0 +1,670 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    background: #111;
+    
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 8%; /* diminui a altura da faixa preta */
+
+    background: #3b3636;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 65px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #ff4f9d;
+}
+
+/* ÍCONES */
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff4f9d;
+}
+
+/* HERO */
+
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 90px;
+    padding-left: 8%;
+    padding-right: 4%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.85) 0%,
+       
+    );
+
+    overflow: hidden;
+}
+
+
+
+/* TEXTO */
+
+.hero-text {
+    width: 40%;
+    color: white;
+}
+
+.subtitle {
+    color: #ff4f9d;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    color: #d8d8d8;
+}
+
+/* BOTÃO */
+
+.btn-primary {
+    display: inline-block;
+
+    padding: 18px 45px;
+
+    background: #ff4f9d;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 50px;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+/* IMAGEM */
+
+.hero-image {
+    width: 45%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+.rede-social-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icone-whats,
+.icone-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.icone-whats {
+    background-color: #25D366;
+}
+
+.icone-instagram {
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+
+.icone-whats:hover,
+.icone-instagram:hover {
+    transform: scale(1.1);
+}
+.scroll-down {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scroll-down a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.scroll-down a:hover {
+    opacity: 0.8;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 100px 10%;
+    background: #f5f5f5;
+}
+
+.about-images {
+    position: relative;
+    width: 500px;
+    height: 550px;
+   
+    
+}
+
+.img-1 {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border: 8px solid rgb(107, 101, 104);
+}
+
+.img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+
+    border: 8px solid rgb(107, 101, 104);
+}
+
+.about-content {
+    max-width: 550px;
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4fa0;
+    color: rgb(31, 30, 30);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.about {
+    background: #a09696;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.consulting {
+    padding: 100px 10%;
+    background: #524f4f;
+}
+
+.consulting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.personal-trainer,
+.online-consulting {
+    background: white;
+    overflow: hidden;
+}
+
+.personal-trainer img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Altere de contain para cover */
+    object-position: center;
+}
+
+.online-consulting img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.personal-trainer h1,
+.online-consulting h1 {
+    padding: 25px 25px 10px;
+    font-size: 1.8rem;
+}
+
+.personal-trainer p,
+.online-consulting p {
+    padding: 0 25px 25px;
+    line-height: 1.8;
+}
+/* Espaçamento geral da seção e centralização do título */
+.results-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.results-section h1 {
+    color: #eeeef3; /* Cor do título (baseado na sua imagem anterior) */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* O Flexbox que coloca tudo na mesma linha */
+.results-container {
+    display: flex;
+    justify-content: center; /* Centraliza as fotos no meio da página */
+    gap: 15px; /* Espaço entre as fotos */
+    flex-wrap: wrap; /* Evita que as fotos quebrem o layout no celular */
+}
+
+/* Tamanho de cada div individual de resultado */
+.results {
+    flex: 1; /* Faz as imagens dividirem o espaço igualmente */
+    min-width: 150px;
+    max-width: 220px; /* Limita a largura para não ficarem gigantes */
+}
+
+/* Estilo da imagem dentro da div */
+.results img {
+    width: 100%; /* A imagem vai preencher 100% da div .results */
+    height: auto; 
+    border-radius: 8px; /* Cantinhos arredondados */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Uma sombra bem leve (opcional) */
+}
+/* Fundo da secção inteira */
+.plans-section {
+    background-color: #1a1a1a; /* Fundo cinza muito escuro */
+    color: #ffffff; /* Texto branco para dar contraste */
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- ESTILOS DA PROMOÇÃO --- */
+.promotion {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.promo-label {
+    color: #ff4791; /* Rosa choque */
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.promotion h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.promo-desc {
+    color: #cccccc; /* Cinza claro para não competir com o título */
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* O Botão Rosa da Imagem */
+.btn-primary {
+    display: inline-block;
+    background-color: #ff4791;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px; /* Deixa o botão em formato de pílula */
+    text-transform: lowercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6367c; /* Rosa ligeiramente mais escuro no hover */
+    transform: translateY(-3px); /* Efeito de flutuar ao passar o rato */
+}
+
+/* --- ESTILOS DOS CARTÕES DE PREÇO --- */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para ecrãs de telemóvel */
+    width: 100%;
+    max-width: 900px;
+}
+
+.price-card {
+    background-color: #2a2a2a; /* Cinza um pouco mais claro que o fundo */
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+    padding: 40px 30px;
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px); /* O cartão sobe um pouco quando se passa o rato */
+    border-color: #ff4791; /* A borda fica rosa */
+}
+
+.price-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-value {
+    font-size: 2.5rem;
+    color: #ff4791;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.price-value span {
+    font-size: 1rem;
+    color: #888;
+    font-weight: normal;
+}
+
+.price-card p {
+    color: #bbbbbb;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+/* Ativa o deslizamento suave quando clica no menu! */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fundo da seção de Resultados */
+.secao-resultados {
+    background-color: #4a4a4a; /* Um cinza médio inspirado na sua imagem */
+    width: 100%;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-resultados h1 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.site-footer {
+    background-color: #1a1a1a;
+    padding: 30px 5%;
+    color: #9e9d9d;
+    border-top: 1px solid #333;
+    
+    /* Adicione estas linhas para centralizar tudo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Garante que o container também respeite o centro */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre logo, texto e ícones */
+}
+
+
+.footer-info p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    min-height: 100vh;
+
+   
+    align-items: center;
+  
+
+    padding-top: 90px;
+    padding-left: 8%;
+    padding-right: 4%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.85) 0%,
+       
+    );
+}
+
+.contact-title {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 900px;
+
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm input,
+#contactForm select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#contactForm button {
+    background: #ff4f9a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #000;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+}
+
+#topBtn:hover {
+    transform: scale(1.1);
+}
+html {
+    scroll-behavior: smooth;
+}

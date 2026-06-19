@@ -20,7 +20,7 @@ body {
     
 }
 
-/* HEADER */
+
 
 header {
     position: fixed;
@@ -63,7 +63,6 @@ nav a:hover {
     color: #ff4f9d;
 }
 
-/* ÍCONES */
 
 .social-links {
     display: flex;
@@ -81,7 +80,6 @@ nav a:hover {
     color: #ff4f9d;
 }
 
-/* HERO */
 
 .hero-section {
     min-height: 100vh;
@@ -106,7 +104,7 @@ nav a:hover {
 
 
 
-/* TEXTO */
+
 
 .hero-text {
     width: 40%;
@@ -135,7 +133,7 @@ nav a:hover {
     color: #d8d8d8;
 }
 
-/* BOTÃO */
+
 
 .btn-primary {
     display: inline-block;
@@ -157,7 +155,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* IMAGEM */
+
 
 .hero-image {
     width: 45%;
@@ -174,7 +172,7 @@ nav a:hover {
     display: block;
 }
 
-/* RESPONSIVO */
+
 
 @media (max-width: 768px) {
 
@@ -377,45 +375,45 @@ nav a:hover {
     padding: 0 25px 25px;
     line-height: 1.8;
 }
-/* Espaçamento geral da seção e centralização do título */
+
 .results-section {
     padding: 50px 5%;
     text-align: center;
 }
 
 .results-section h1 {
-    color: #eeeef3; /* Cor do título (baseado na sua imagem anterior) */
+    color: #eeeef3; 
     margin-bottom: 40px;
     text-transform: uppercase;
 }
 
-/* O Flexbox que coloca tudo na mesma linha */
+
 .results-container {
     display: flex;
-    justify-content: center; /* Centraliza as fotos no meio da página */
-    gap: 15px; /* Espaço entre as fotos */
-    flex-wrap: wrap; /* Evita que as fotos quebrem o layout no celular */
+    justify-content: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
 }
 
-/* Tamanho de cada div individual de resultado */
+
 .results {
-    flex: 1; /* Faz as imagens dividirem o espaço igualmente */
+    flex: 1; 
     min-width: 150px;
-    max-width: 220px; /* Limita a largura para não ficarem gigantes */
+    max-width: 220px; 
 }
 
-/* Estilo da imagem dentro da div */
+
 .results img {
-    width: 100%; /* A imagem vai preencher 100% da div .results */
+    width: 100%; 
     height: auto; 
-    border-radius: 8px; /* Cantinhos arredondados */
+    border-radius: 8px; 
     display: block;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Uma sombra bem leve (opcional) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 /* Fundo da secção inteira */
 .plans-section {
-    background-color: #1a1a1a; /* Fundo cinza muito escuro */
-    color: #ffffff; /* Texto branco para dar contraste */
+    background-color: #1a1a1a; 
+    color: #ffffff; 
     padding: 80px 5%;
     display: flex;
     flex-direction: column;
@@ -423,7 +421,7 @@ nav a:hover {
     text-align: center;
 }
 
-/* --- ESTILOS DA PROMOÇÃO --- */
+
 .promotion {
     max-width: 800px;
     margin-bottom: 60px;
@@ -445,12 +443,11 @@ nav a:hover {
 }
 
 .promo-desc {
-    color: #cccccc; /* Cinza claro para não competir com o título */
+    color: #cccccc; 
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-/* O Botão Rosa da Imagem */
 .btn-primary {
     display: inline-block;
     background-color: #ff4791;
@@ -459,28 +456,28 @@ nav a:hover {
     padding: 15px 40px;
     font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 50px; /* Deixa o botão em formato de pílula */
+    border-radius: 50px; 
     text-transform: lowercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-primary:hover {
-    background-color: #e6367c; /* Rosa ligeiramente mais escuro no hover */
-    transform: translateY(-3px); /* Efeito de flutuar ao passar o rato */
+    background-color: #e6367c; 
+    transform: translateY(-3px); 
 }
 
-/* --- ESTILOS DOS CARTÕES DE PREÇO --- */
+
 .pricing-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Para ecrãs de telemóvel */
+    flex-wrap: wrap; 
     width: 100%;
     max-width: 900px;
 }
 
 .price-card {
-    background-color: #2a2a2a; /* Cinza um pouco mais claro que o fundo */
+    background-color: #2a2a2a; 
     border: 1px solid #3a3a3a;
     border-radius: 15px;
     padding: 40px 30px;
@@ -491,8 +488,8 @@ nav a:hover {
 }
 
 .price-card:hover {
-    transform: translateY(-10px); /* O cartão sobe um pouco quando se passa o rato */
-    border-color: #ff4791; /* A borda fica rosa */
+    transform: translateY(-10px);
+    border-color: #ff4791;
 }
 
 .price-card h2 {
@@ -521,15 +518,14 @@ nav a:hover {
     margin-bottom: 12px;
     font-size: 1rem;
 }
-/* Ativa o deslizamento suave quando clica no menu! */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Fundo da seção de Resultados */
+
 .secao-resultados {
-    background-color: #4a4a4a; /* Um cinza médio inspirado na sua imagem */
-    width: 100%;
+    background-color: #4a4a4a; 
     padding: 80px 5%;
     display: flex;
     flex-direction: column;
@@ -546,7 +542,7 @@ html {
     color: #9e9d9d;
     border-top: 1px solid #333;
     
-    /* Adicione estas linhas para centralizar tudo */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -554,20 +550,15 @@ html {
     text-align: center;
 }
 
-/* Garante que o container também respeite o centro */
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; /* Espaço entre logo, texto e ícones */
-}
 
+
+   
 
 .footer-info p {
     font-size: 0.9rem;
     margin: 0;
 }
-/* ===== CONTACT SECTION ===== */
+
 .contact-section {
     min-height: 100vh;
 
@@ -667,4 +658,146 @@ section.show {
 }
 html {
     scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        max-height: 55px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 50px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .about-images {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-1,
+    .img-2 {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .consulting {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .results {
+        width: 45%;
+        max-width: 180px;
+    }
+
+    .promotion h1 {
+        font-size: 2rem;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-section {
+        padding: 100px 20px;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 30px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .about {
+        gap: 40px;
+        padding: 80px 5%;
+    }
+
+    .about-images {
+        width: 400px;
+    }
+
+    .consulting {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-container {
+        justify-content: center;
+    }
+
+    .contact-container {
+        max-width: 700px;
+    }
 }

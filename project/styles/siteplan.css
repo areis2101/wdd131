@@ -850,3 +850,27 @@ body {
         font-size: 24px;
     }
 }
+@media (max-width: 768px) {
+
+    .about-images {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .img-1 {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .img-2 {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
